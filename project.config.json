@@ -1,0 +1,39 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.0",
+	"appid": "wx1b644be7a37ab8c3",
+	"projectname": "1705demo",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "模板跳过来",
+					"pathName": "pages/user/user",
+					"query": "name=yangj&age=123",
+					"scene": "1043",
+					"referrerInfo": {
+						"appId": "wx1b644be7a37ab8c3"
+					}
+				}
+			]
+		}
+	}
+}

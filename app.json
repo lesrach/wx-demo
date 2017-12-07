@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/user/user",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0cc440",
+    "navigationBarTitleText": "用户中心",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#e7e7e7"
+  },
+  "tabBar": {
+    "color": "#ddd",
+    "selectedColor": "#0cc440",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户",
+        "iconPath": "static/imgs/boy.png",
+        "selectedIconPath": "/static/imgs/girl.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/imgs/boy.png",
+        "selectedIconPath": "/static/imgs/girl.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 3000
+  }
+}

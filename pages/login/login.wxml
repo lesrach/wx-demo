@@ -1,0 +1,12 @@
+<!--pages/login/login.wxml-->
+
+<view class='loginBox'>
+  <form bindsubmit="submit">
+     <label>用户名：<input name="username"></input></label>
+     <label>密码：<input name="pwd" maxlength="6"></input></label>
+     <button form-type='submit'>提交</button>
+  </form>
+  <button catchtap='choseImg'>选择图片</button>
+  <button catchtap='getSys' animation="{{animationData}}">系统信息</button>
+  <!-- <image src="{{src}}"></image> -->
+</view>

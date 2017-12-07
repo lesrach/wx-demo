@@ -1,0 +1,98 @@
+<!--pages/user/user.wxml-->
+<import src="../../static/templates/header.wxml" />
+
+<view class='box' hover-class='active' hover-stop-propagation>
+  <!-- <text data-id="{{uid}}">{{arr.game}}</text>
+  <view wx:for="{{todos}}" wx:for-item="i" wx:for-index="idx" wx:key="{{idx}}">
+     {{i.name}}---{{idx}}
+  </view>
+
+  <view wx:if="{{condition}}"> True </view>
+
+  <view wx:if="{{length > 5}}"> 1 </view>
+  <view wx:elif="{{length > 2}}"> 2 </view>
+  <view wx:else> 3 </view>
+  
+  <button bindtap="handleCatch" data-id='EN'>click me</button>
+  <button catchtap='handleCatch' data-id='CN'>点我</button>
+
+  <template is="copy" data="{{company}}"></template> -->
+
+  <!-- <scroll-view scroll-y bindscrolltolower="handlelower" scroll-top="150" enable-back-to-top scroll-with-animation style='height:150rpx;border:1rpx solid blue'>
+     <view class='scroll-view-item bc_green'>1</view>
+     <view class='scroll-view-item'>2</view>
+     <view class='scroll-view-item bc_red'>3</view>
+     <view class='scroll-view-item'>4</view>
+  </scroll-view> -->
+  <!-- <swiper circular bindchange="handleSwiper" indicator-dots indicator-active-color="hotpink" current="1">
+     <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper> -->
+   <!-- <movable-area style="height: 200px;width: 200px;background: red;">
+    <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all">
+    </movable-view>
+  </movable-area> -->
+  <!-- <icon type="waiting" size="40" color='hotpink'></icon>
+  <progress percent="70" active stroke-width="3" show-info activeColor="hotpink"></progress> -->
+  <form bindsubmit="handleSubmit">
+     <!-- <input name="username" type='text' value="{{msg}}" bindinput="handleUser" confirm-type="next" placeholder="请输入..." placeholder-class="pl" focus="true"></input>
+     {{msg}}
+     <!-- 不管你有几个checkbox都使用 group 包起来 -->
+     <!-- <checkbox-group bindchange="handleCheck" name="likes">
+         <label>1704:<checkbox color="hotpink" value="1704"></checkbox></label> 
+         1705:<checkbox color="hotpink" value='1705'></checkbox>
+         1707:<checkbox color="hotpink" value='1707'></checkbox>
+     </checkbox-group> -->
+     <!-- <view>
+         <picker range='{{country}}' range-key="name" value='{{idx}}' bindchange='handlePicker'>
+            <view>请选择你喜欢的电影：{{country[idx].name}}</view>
+         </picker>
+     </view> -->
+     <!-- <view> -->
+         <!-- <picker name="date" fields="month" mode="date" bindchange='handleDate' value="{{time}}" end="2017-12-31" start="2017-1-1">
+            <view>请选择时间:{{time}}</view>
+         </picker>
+     </view>
+
+     <view>
+         <picker name="region" fields="month" mode="region" bindchange='handleDate'>
+            <view>请选择时间:{{time}}</view>
+         </picker>
+     </view> -->
+     <!-- <picker-view name="times" bindchange="handlepickview" indicator-style="height: 30px;" style="width: 100%; height: 100px;">
+        <picker-view-column>
+           <view wx:for="{{years}}">{{item}}</view>
+        </picker-view-column>
+        <picker-view-column>
+            <view wx:for="{{months}}">{{item}}</view>
+        </picker-view-column>
+     </picker-view> -->
+     <!-- <radio-group bindchange="handleradio" name="sex">
+       <label>男：<radio value="1" checked="{{true}}" color="hotpink"></radio></label>
+       <label>女：<radio value="0" color="hotpink"></radio></label>
+     </radio-group>
+     <slider value="20" activeColor="hotpink" show-value bindchange="handleslider">
+     
+     </slider>
+     <switch checked color="hotpink"></switch>
+     <button size='mini' type="primary" loading form-type="submit">提交</button> -->
+  </form>
+  
+  <!-- <navigator hover-class="active" url="/pages/logs/logs" open-type='navigate'>去日志</navigator>
+
+  <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio> -->
+   <!-- <image lazy-load src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505189777688&di=0da47150e7259ec0692ef700080a8ae9&imgtype=0&src=http%3A%2F%2Fwww.sznews.com%2Fguoxue%2Fcontent%2Fattachement%2Fjpg%2Fsite3%2F20151009%2F4439c452e8ec178152a14d.jpg'>
+  </image>
+    <image lazy-load mode="bottom" src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505189777688&di=0da47150e7259ec0692ef700080a8ae9&imgtype=0&src=http%3A%2F%2Fwww.sznews.com%2Fguoxue%2Fcontent%2Fattachement%2Fjpg%2Fsite3%2F20151009%2F4439c452e8ec178152a14d.jpg'> 
+  </image> -->
+  <map bindcontroltap="handleContro" longitude="104.0763" controls="{{controls}}" polyline="{{polyline}}" show-location latitude="30.6233" scale="17" markers="{{markers}}">
+    <cover-view>
+       滴滴滴！老年卡！
+    </cover-view>
+  </map>
+  <view style="top:10px;left:10px;font-size:60px;color:red" bindtap='openMap'>{{name}}</view>
+</view>
+

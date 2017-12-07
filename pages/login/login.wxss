@@ -1,0 +1,7 @@
+/* pages/login/login.wxss */
+.loginBox{
+  padding: 32rpx;
+}
+.loginBox input{
+  border-bottom: 1rpx solid orangered
+}
